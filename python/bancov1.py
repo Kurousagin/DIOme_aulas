@@ -23,8 +23,9 @@ while True:
         
         if valor > 0:
             saldo += valor
+            #extrato += f" Depósito: R$ {valor:.2f}\n"
             extrato += valor
-            value = print(f" Depósito: R$ {valor:.2f}\n")
+            value = f" Depósito: R$ {valor:.2f}\n"
             
         else:
             print("Operação falhou! Valor informado invalido")
@@ -52,7 +53,7 @@ while True:
         elif valor > 0 :
             saldo -= valor
             extrato += valor
-            value = print(f"Saque: R$ {valor:.2f}\n")
+            value = f"Saque: R$ {valor:.2f}\n"
             numero_saques +=1
             
         else:
@@ -71,7 +72,7 @@ while True:
     elif opcao == "E":
         # exibir variavel de extrato, formatada já em valores
         print("<=====================menu===========================>  "  )
-        print( "Não fora realizada nenhuma movimentação" if not extrato else extrato)
+        print( "Não fora realizada nenhuma movimentação" if not extrato else value)
         print(f"\n saldo : R$ {saldo:.2f}")
         print("<===================================================>"    )
     elif opcao == "Q":
