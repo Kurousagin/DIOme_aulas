@@ -9,7 +9,7 @@ menu = """
 
 saldo = 0 
 limite = 500
-extrato = 0
+extrato = ""
 # permite apenas 3 saques diarios/ ARMAZENAR A QUANTIDADE DE SAQUES
 numero_saques = 0
 LIMITE_SAQUES = 3
@@ -23,9 +23,9 @@ while True:
         
         if valor > 0:
             saldo += valor
-            #extrato += f" Depósito: R$ {valor:.2f}\n"
-            extrato += valor
-            value = f" Depósito: R$ {valor:.2f}\n"
+            extrato += f" Depósito: R$ {valor:.2f}\n"
+            # extrato += valor
+            # value = f" Depósito: R$ {valor:.2f}\n"
             
         else:
             print("Operação falhou! Valor informado invalido")
@@ -52,12 +52,12 @@ while True:
             
         elif valor > 0 :
             saldo -= valor
-            extrato += valor
-            value = f"Saque: R$ {valor:.2f}\n"
+            extrato += f"Saque: R$ {valor:.2f}\n"
             numero_saques +=1
             
         else:
             print("Valor invalido!!")
+            
         # if (saldo > 0):
         #     saque = int(input("Qual valor deseja sacar? : \n"))
         #     print("\n" * 130)
@@ -72,7 +72,7 @@ while True:
     elif opcao == "E":
         # exibir variavel de extrato, formatada já em valores
         print("<=====================menu===========================>  "  )
-        print( "Não fora realizada nenhuma movimentação" if not extrato else value)
+        print( "Não fora realizada nenhuma movimentação" if not extrato else extrato)
         print(f"\n saldo : R$ {saldo:.2f}")
         print("<===================================================>"    )
     elif opcao == "Q":
@@ -80,3 +80,6 @@ while True:
 
     else:
         print("Operação invalida, por favor selecione a operação desejada")
+
+
+
