@@ -1,5 +1,5 @@
 class Bicicleta:    
-    def _init_(self, cor, modelo, ano,valor):
+    def __init__(self, cor, modelo, ano,valor) -> None:
         self.cor = cor
         self.modelo = modelo
         self.ano = ano 
@@ -15,10 +15,15 @@ class Bicicleta:
     def correr(self):
         print("Vush")
         
+    def __str__(self) -> str:
+        return f"Bicicleta: {self.cor}, {self.modelo}, {self.ano}, {self.valor}"
         
-b1 = Bicicleta()
-b1.cor = "verde"
+    def __str__(self) -> str:
+        return f"{self.__class__.__name__}: {', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
+        
+b1 = Bicicleta("Amarelo","caloi",2022,6000)
+print(b1)
 b1.buzinar()
-b1.correr()
-b1.parar()
-print(b1.cor)
+# b1.correr()
+# b1.parar()
+
