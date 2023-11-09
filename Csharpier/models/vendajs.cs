@@ -12,6 +12,7 @@ namespace Csharpier.models
         [JsonProperty("Nome_Produto")]
         public string Produto { get; set; }
         public decimal Preco { get; set; }
+        public decimal? desconto { get; set; }
         public DateTime Datavenda { get; set; }
     }
 }
