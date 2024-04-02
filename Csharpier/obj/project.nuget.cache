@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4YfGPrbtZCkiAxDVpei5cTkZ5Nsc1hzeFmuWekBssmyssR5IrRKMoJI53ebcnxfbCa5q/IqbdD7c8GOBZwryAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pedro.souza_cobli\\Desktop\\DIOme_aulas\\Csharpier\\Csharpier.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pedro.souza_cobli\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

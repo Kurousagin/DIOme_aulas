@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Nome_Produto": "Mesa regulável",
+    "Preco": 2000.00,
+    "Datavenda": "2023-09-20T13:56:59.7436646-03:00",
+    "desconto": null
+
+  },
+  {
+    "Id": 2,
+    "Nome_Produto": "Microfone HyperX",
+    "Preco": 1500.00,
+    "Datavenda": "2023-09-20T13:56:59.7436646-03:00",
+    "desconto": 10
+
+  },
+  {
+    "Id": 3,
+    "Nome_Produto": "Mesa de marfim",
+    "Preco": 2500.00,
+    "Datavenda": "2023-09-20T13:56:59.7436646-03:00",
+    "desconto": 10
+
+  }
+]
