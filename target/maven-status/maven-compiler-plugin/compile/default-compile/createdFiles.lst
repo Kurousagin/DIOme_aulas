@@ -1,0 +1,5 @@
+br/com/meuBanco/ContaPoupanca.class
+br/com/meuBanco/Conta.class
+br/com/meuBanco/ContaCorrente.class
+br/com/meuBanco/LogSaldoAspect.class
+br/com/meuBanco/Banco.class
